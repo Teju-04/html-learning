@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Absolute Position</title>
+    <style>
+      .section {
+        width: 800px;
+        height: 400px;
+        position: relative;
+        /* if the position of this class is not relative, then the sub section refers to the whole screen and moves 
+        across the screen with its top and right pxs specified which was 80px and 0px */
+        border: 2px solid black;
+        background-color: blue;
+      }
+
+      .sub-section {
+        width: 300px;
+        height: 100px;
+        position: absolute;
+        /* since there is a position ancestor, the top and right properties are applied with reference to the section element */
+        top: 80px;
+        right: 40px;
+        border: 2px solid black;
+        background-color: yellow;
+      }
+      /* the element with position absolute is positioned relative to its nearest positioned ancestor.
+         In this case the nearest positioned ancestor is the element with class section as it has position relative. 
+         The element with class sub-section is positioned 80px from the top and 0px from the right of the element with class section. */
+    </style>
+  </head>
+  <body>
+    <div class="section">
+      <div class="sub-section"></div>
+    </div>
+  </body>
+</html>

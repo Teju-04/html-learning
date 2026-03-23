@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>learn pseudo</title>
+    <style>
+      /* pseudo class */
+      /* :hover,:nth-child */
+      /* pseudo element */
+      /* ::first-letter, ::first-line, ::selection */
+
+      .btn:hover {
+        background-color: blue;
+      }
+      .heading:hover {
+        font-size: 100px;
+      }
+
+      /* li:nth-child(1) {
+        background-color: violet;
+      } */
+      /*li:nth-child(3n) {
+        background-color: green;
+      } */
+      li:nth-child(2n + 1) {
+        background-color: lightblue;
+      }
+
+      /* Questions: Change the color of the fourth list item to red. Or Change the color of the 
+      last or even or odd list items to another color of your choice. */
+
+      p::first-letter {
+        font-size: 200px;
+      }
+
+      p::first-line {
+        background-color: lightsalmon;
+      }
+
+      p::selection {
+        background-color: lightgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="btn">Button</button>
+
+    <h1 class="heading">Hello Text</h1>
+    <ul>
+      <li>One</li>
+      <li>Two</li>
+      <li>Three</li>
+      <li>Four</li>
+      <li>Five</li>
+      <li>Six</li>
+      <li>Seven</li>
+      <li>Eight</li>
+    </ul>
+
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem in optio,
+      iure, itaque sint vero non facere neque autem impedit amet dolores quia
+      aperiam alias facilis vitae. Exercitationem, nisi odio. Lorem ipsum dolor
+      sit, amet consectetur adipisicing elit. Rerum eveniet, ullam earum natus
+      labore exercitationem veniam officia quis delectus cum quidem aut tempora
+      nam. Temporibus tempore distinctio itaque doloremque iure.
+    </p>
+  </body>
+</html>

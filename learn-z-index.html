@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>z-index</title>
+    <!-- z-index is used to specify the stack order of elements. 
+     An element with a higher z-index is always in front of an element with a lower z-index. -->
+    <style>
+      .one {
+        width: 200px;
+        height: 100px;
+        position: relative;
+        top: 50px;
+        z-index: 1;
+        border: 2px solid black;
+        background-color: aqua;
+      }
+
+      .two {
+        width: 200px;
+        height: 100px;
+        position: relative;
+        z-index: 2;
+
+        border: 2px solid black;
+        background-color: rgb(201, 123, 234);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one"></div>
+    <div class="two"></div>
+  </body>
+</html>

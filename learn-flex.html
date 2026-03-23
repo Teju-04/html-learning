@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn Flex</title>
+    <!-- display and flex to design your web page in one dimension. 
+    It is a powerful layout module that allows you to create flexible 
+    and responsive designs with ease.
+    With flexbox, you can control the alignment, spacing, 
+    and order of elements within a container, making it ideal for building complex layouts 
+    without the need for floats or positioning. -->
+    <style>
+      .main {
+        height: 1000px;
+        border: 2px solid blue;
+        display: flex;
+        /* displays the child elements in a row (horizontally) by default. */
+        flex-direction: row-reverse;
+        /* changes the direction of the flex items to a column (vertically) and the default
+        value of the flex-direction is row */
+        /* There are four possible values for the flex-direction property:
+        row: This is the default value. The flex items are laid out in a horizontal row, from left to right.
+        row-reverse: The flex items are laid out in a horizontal row, but in reverse order, from right to left.
+        column: The flex items are laid out in a vertical column, from top to bottom.
+        column-reverse: The flex items are laid out in a vertical column, but in reverse order, from bottom to top. */
+        justify-content: space-around;
+        /* defines how the browser distributes space between and around content items 
+        along the main axis of a flex container, and the main axis is defined by the flex-direction property. */
+        align-items: center;
+        /* defines how the browser distributes space between and around content 
+        items along the cross axis of a flex container, and the cross axis is perpendicular to 
+        the main axis. */
+
+        flex-wrap: wrap;
+        /* By default, flex items will try to fit onto one line. You can change that 
+        and allow the items to wrap as needed with this property. */
+      }
+      .one {
+        background-color: red;
+        text-align: center;
+        width: 400px;
+        height: 200px;
+        font-size: 100px;
+        border: 2px solid black;
+      }
+      .two {
+        background-color: blue;
+        width: 400px;
+        height: 200px;
+        font-size: 100px;
+        text-align: center;
+        border: 2px solid black;
+      }
+      .three {
+        background-color: green;
+        text-align: center;
+        width: 400px;
+        height: 200px;
+        font-size: 100px;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="one">1</div>
+      <div class="two">2</div>
+      <div class="three">3</div>
+    </div>
+  </body>
+</html>

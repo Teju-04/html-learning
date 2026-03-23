@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Content</title>
+    <style>
+        /* Converted the inline element to a block element and the block element to an inline element */
+        /* using the display property */
+      .one {
+        background-color: yellow;
+        display: inline;
+        /* the element is displayed as an inline element and it doesn't start on a new line */
+      }
+      .two {
+        background-color: orange;
+        display: block;
+        /* the element is displayed as a block element and it starts on a new line */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one">Text One</div>
+    <!-- Applies background color till the end of the line as it is a block element. -->
+    <span class="two"> Text Two</span>
+    <!-- Applies background color only to the text as it is an inline element. -->
+  </body>
+</html>

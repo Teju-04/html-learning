@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn CSS position</title>
+    <!-- CSS positions -->
+    <!-- 1. static - if the position is set my default, then it is static
+     2. relative
+     3. fixed
+     4. absolute 
+     5. sticky -->
+    <style>
+      .one {
+        background-color: rgb(34, 86, 89);
+        width: 800px;
+        height: 150px;
+        font-size: 100px;
+        text-align: center;
+        position: static;
+        /* moving from its original position, moved its position relatively */
+        /* if the position is not relative but static then the position of the element is not 
+        moved inspite of the top and left properties */
+        /* gives top 200px and left space to 200px */
+        top: 200px;
+        left: 200px;
+      }
+      .two {
+        background-color: rgb(134, 186, 189);
+        width: 800px;
+        height: 150px;
+        font-size: 100px;
+        text-align: center;
+      }
+      .three {
+        background-color: rgb(38, 186, 79);
+        width: 800px;
+        height: 150px;
+        font-size: 100px;
+        text-align: center;
+
+        position: sticky;
+        top: 100px;
+
+        /* it is originally at a default position with top 100px but when we scroll down
+        it displaces from its original position and it renders itself with 100 px from the top of
+        the viewport */
+
+        /*position: fixed;
+        /* the element is fixed to the viewport and doesn't move when we scroll the page */
+        /*left: 200px;
+        /* the left property is applied to the element with position fixed and it moves
+         the element 200px from the left of the viewport */
+      }
+      .four {
+        background-color: rgb(84, 36, 190);
+        width: 800px;
+        height: 150px;
+        font-size: 100px;
+        text-align: center;
+      }
+      .five {
+        background-color: rgb(234, 86, 189);
+        width: 800px;
+        height: 150px;
+        font-size: 100px;
+        text-align: center;
+      }
+      .six {
+        background-color: rgb(134, 45, 89);
+        width: 800px;
+        height: 150px;
+        font-size: 100px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one">1</div>
+    <div class="two">2</div>
+    <div class="three">3</div>
+    <div class="four">4</div>
+    <div class="five">5</div>
+    <div class="six">6</div>
+  </body>
+</html>

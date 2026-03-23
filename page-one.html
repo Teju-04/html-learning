@@ -1,0 +1,99 @@
+<html>
+  <head>
+    <title>Hero Banner</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .hero {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      .banner {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .hero-content {
+        position: absolute;
+        top: 50%;
+        right: 100px;
+        text-align: center;
+        color: white;
+        width: 80%;
+      }
+
+      h1 {
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 1.2;
+      }
+
+      p {
+        margin-top: 15px;
+        font-size: 16px;
+        opacity: 0.9;
+      }
+
+      .buttons {
+        margin-top: 25px;
+      }
+
+      .btn {
+        padding: 12px 24px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-size: 14px;
+        margin: 5px;
+      }
+
+      .btn-outline {
+        border: 2px solid white;
+        color: white;
+      }
+
+      .btn-green {
+        background-color: #2cc5a7;
+        color: white;
+      }
+
+      .btn-outline:hover {
+        background-color: white;
+        color: black;
+      }
+
+      .btn-green:hover {
+        background: #21a88e;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="hero">
+      <img
+        class="banner"
+        src="https://images.unsplash.com/photo-1501785888041-af3ef285b470"
+        alt="mountain"
+      />
+
+      <div class="hero-content">
+        <h1>With Great Design<br />Comes Great Response</h1>
+
+        <p>Make a beautiful HubSpot website — just the way you want it.</p>
+
+        <div class="buttons">
+          <a href="#" class="btn btn-outline">LEARN MORE</a>
+          <a href="#" class="btn btn-green">GET STARTED</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
