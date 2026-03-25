@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility</title>
+    <!-- Interview Questions: Difference between visibility hidden and display none -->
+
+    <style>
+        .one {
+            /* visibility: hidden; */
+            /* In visibility hidden, it hides the content but doesn't remove it completely
+            It leaves a empty space */
+            /* display: none; */
+            /* Removes the content for display none  */
+            width: 400px;
+            height: 400px;
+            background-color: yellow;
+        }
+        .two {
+            width: 400px;
+            height: 400px;
+            background-color: brown;
+        }
+        li {
+            /* It changes the list dot points to empty circles */
+            /* list-style-type: circle; */
+            /* It changes it to square points */
+            /* list-style-type: square; */
+            /* Default type of list is in disc */
+            /* list-style-type: disc; */
+            /* It changes the bullet points to upper case alphabets */
+            /* list-style-type: upper-alpha; */
+            /* It changes the bullet points to lower case alphabets */
+            /* list-style-type: lower-alpha; */
+            /* list-style-type: upper-roman; */
+            list-style-type: lower-roman;
+        }
+        .three {
+            width: 400px;
+            height: 200px;
+            border: 2px solid black;
+            text-align: center;
+            
+        }
+        .four {
+            width: 400px;
+            height: 200px;
+            border: 2px solid black;
+            text-align: center;
+            padding: 50px;
+            box-sizing: border-box;
+            /* if there is unnecessary space within my site, remove that */
+        }
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Mango</li>
+        <li>Orange</li>
+        <li>Pineapple</li>
+    </ul>
+    <div class="three">Content One</div>
+    <div class="four"> Content two</div>
+</body>
+</html>

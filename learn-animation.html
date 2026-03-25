@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .box {
+            width: 400px;
+            height: 400px;
+            background-color: blue;
+            text-align: center;
+            font-size: 200px;
+            animation-name: hello;
+            animation-duration: 4s;
+            position: relative;
+
+            /* transition-property: width;
+            transition-duration: 5s; */
+        }
+        /* @keyframes hello {
+            /* what happens is, it changes its initial background-color which is blue to blueviolet
+            then transitions animates to to properties 
+            from {
+                background-color: blueviolet;
+            }
+            to {
+                background-color: brown;
+            }
+        }
+        */
+
+        @keyframes hello {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+            25% {
+                top: 0px;
+                left: 200px;
+            }
+            50% {
+                top: 200px;
+                left: 200px;
+            }
+            75% {
+                top: 200px;
+                left: 0px;
+            }
+            100% {
+                top: 0px;
+                left: 0px;
+            }
+        }
+        /* .box:hover {
+            width: 500px;
+        } */
+    </style>
+</head>
+<body>
+    <div class="box">1</div>
+</body>
+</html>

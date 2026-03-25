@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Style</title>
+    <style>
+        /* we have added colors for the class as well as its id and its elemental tag, but the
+        color rendered on the screen is not any of it */
+        /* as inline css has the highest priority */
+        .heading {
+            color: blue;
+        }
+        #hello {
+            color: aqua;
+        }
+        h1 {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1 class="heading" id="hello" style="color: red">Heading One -- red color</h1> -->
+    <!-- <h1 class="heading" id="hello" >Heading One --  aqua color</h1>  -->
+    <!-- <h1 class="heading" >Heading One --  blue color</h1> -->
+    <h1 >Heading One --  green color</h1>
+
+    <!-- Specificity: 
+    1. Inline css
+    2. id selector
+    3. class selector
+    4. element selector -->
+
+    
+</body>
+</html>
