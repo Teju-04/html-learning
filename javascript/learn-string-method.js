@@ -119,6 +119,3 @@ console.log('The longest string is : ', max_string);
 
 // Conditions: if there are more than 1 longest elements in the string, 
 // do we display the last longest element or the first occurance of the longest element.
-
-
-
