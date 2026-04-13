@@ -121,9 +121,25 @@ for (let i = 0; i < word.length; i++) {
     } else {
         dict[word[i]] += 1;
     }
+    // OR
+    // dict.word[i] = dict.word[i] ? dict.word[i] + 1 : 1;
 }
 
 console.log(dict);
 
 
+let findFreq = function (word) {
+    word = word.toLocaleLowerCase();
+    let count = {};
+    for (let char of word) {
+        // count[word[char]] = count[word[char]] ? count[word[char]] + 1 : 1;  
+        // if char is not in count, then count[char] will be undefined,
+        // thus we can use the logical OR operator to return 0 in that case and add 1 to it
+        count[char] = (count[char] || 0) + 1;
+        // count[char] = count.get(char, 0) + 1; // if count[char] is undefined, it will return 0
+    }
+    return count;
+}
+
+console.log(findFreq('Bangalore'));
 
