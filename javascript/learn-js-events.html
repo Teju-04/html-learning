@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+</head>
+<!-- important interview question in CSS: 1. What is box model?
+important interview question in Javascript: 1. What is Closure? -->
+
+<body>
+    <h1 id="heading"></h1>
+    <label for="un">UserName</label>
+    <!-- onblur is an event, say we click on the input box then place and click the cursor elsewhere
+    the onblur event gets triggered -->
+    <input type="text" id="un" name="un" onblur="handleBlur()">
+    <p id="blur" style="color:red"></p>
+    <br>
+    <br>
+    <button id="submit-button" onclick="handleClick()" onmouseover="handleMouseOver()"
+        onmouseout="handleMouseOut()">Submit</button>
+    <script>
+        function handleClick() {
+            document.getElementById("heading").innerHTML = "Hello";
+        }
+        function handleBlur() {
+            document.getElementById("blur").innerHTML = 'Username is not filled? Maybe it is filled';
+        }
+        function handleMouseOver() {
+            document.getElementById("heading").innerHTML = "They hovered over the submit button.Heh";
+        }
+        function handleMouseOut() {
+            document.getElementById("submit-button").innerHTML = "Cursor is out";
+        }
+    </script>
+</body>
+
+</html>
