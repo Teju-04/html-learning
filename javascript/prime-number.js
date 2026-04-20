@@ -1,14 +1,14 @@
 function isPrime(number) {
-    if(number == 1){
+    if (number == 1) {
         console.log('It is neither a prime nor composite number');
-        return undefined;
+        return false;
     }
-    if(number < 1) {
+    if (number < 1) {
         console.log('Please enter a valid number');
-        return undefined;
+        return false;
     }
-    for(let i = 2;i < number/2;i++){
-        if(number % i == 0){
+    for (let i = 2; i < number / 2; i++) {
+        if (number % i == 0) {
             return false;
         }
     }
