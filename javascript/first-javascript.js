@@ -48,3 +48,4 @@ console.log('State is',state);
 // In var name = 'David' -->
 // var is a declaration and the value given to name is called as initialization.
 
+
