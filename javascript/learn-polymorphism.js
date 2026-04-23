@@ -68,5 +68,3 @@ console.log('The result is ', sum(4, 4));
 // Synchronous and Asynchronous Programming:
 
 
-
-

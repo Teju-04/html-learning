@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+</head>
+
+<body>
+    <h1 id="heading"></h1>
+    <script>
+        let arr = [
+            {
+                name: 'David',
+                age: 23
+            },
+            {
+                name: 'Johnny',
+                age: 30
+            },
+            {
+                name: 'Miller',
+                age: 32
+            },
+        ];
+        document.getElementById("heading").innerHTML = arr
+            .map((value) => {
+                return `Name is ${value.name} and their age is ${value.age}`;
+            }).join("<br>");
+    </script>
+</body>
+</html>
